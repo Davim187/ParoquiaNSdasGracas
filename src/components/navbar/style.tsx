@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const NavbarDiv = styled.div`
-  background-color: #369eff;
+  background-color: #0099ff;
   border: 1px solid #0066ff;
-  height: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;  
-
-  h2{
-    margin: 25px;
+  justify-content: center;
+  font-family: kanit;
+  font-size: 70%;
+  position: relative;
+  bottom: 10px;
+  h2 {
+    margin: 8px 10px 10px 8px;
     color: #fff;
   }
-  h2:hover{
+  h2:hover {
     text-decoration: underline;
     cursor: pointer;
   }
@@ -23,6 +25,11 @@ export const NavbarDiv = styled.div`
     text-decoration: dashed;
   }
   a {
-    text-decoration: none; /* Remove o sublinhado dos links */
+    text-decoration: none;
   }
-` 
+  @media (max-width: 1000px) {
+    h2 {
+      font-size: 100%;
+    }
+  }
+`;
