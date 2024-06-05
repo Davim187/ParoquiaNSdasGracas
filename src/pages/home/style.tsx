@@ -8,11 +8,10 @@ export const DivHistoriaParoquia = styled.div`
     font-size: 2.5vw;
     padding-top: 2%;
     font-family: kanit;
-    margin-bottom: 7%;
   }
   hr {
     width: 80%;
-    margin:0 10%;
+    margin: 0 10%;
   }
   @media (max-width: 1000px) {
     h1 {
@@ -56,20 +55,77 @@ export const PadreDiacono = styled.div`
 `;
 export const Padre = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: row;
-  width: 100%;
-  height: 320px;
-  @media (max-width: 1000px) {
-    width: 60%;
-    margin: 2% 1% 0 0;
-  }
+  padding: 5%;
+  /* height: 250px; */
   p {
     margin: 0;
+    font-size: 1.1vw;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
   }
-  margin: 0 8%;
   img {
-    width: 100%;
-    margin-right: 2%;
-    font-size: 1.5vw;
+    width: 250px;
+    margin: 2% 1% 0 0;
+    @media (max-width: 1000px) {
+      min-width: 30%;
+      margin: 2% 1% 0 0;
+    }
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    p {
+      font-size: 8px;
+      order: 2;
+    }
+    img {
+      order: 1;
+      width: 40%;
+      margin: 0;
+    }
+  }
+`;
+
+export const Diacono = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  align-items: center;
+  order: 1;
+  p {
+    margin: 0;
+    font-size: 1.1vw;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+  }
+  img {
+    order: 2;
+    width: 250px;
+    margin: 2% 1% 0 0;
+    @media (max-width: 1000px) {
+      min-width: 20%;
+      margin: 2% 1% 0 0;
+    }
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    p {
+      font-size: 8px;
+      order: 2;
+    }
+    img {
+      order: 1;
+      width: 40%;
+      margin: 0;
+    }
   }
 `;
