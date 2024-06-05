@@ -32,7 +32,7 @@ export function Home() {
       <Header />
       <DivHistoriaParoquia>
         <Historia>
-        <h1>História Paróquial</h1>
+        <h1>História Paróquia</h1>
         <ImgParoquia1 src={imgParoquial} alt="Image da frente da Paroquia" />
         <ImgParoquia2 src={imgParoquial2} alt="Image da frente da Paroquia" />
         <p>
